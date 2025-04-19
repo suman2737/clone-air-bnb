@@ -28,9 +28,6 @@ app.use(cors({
 
 // console.log(process.env.MONGO_URL);
 
-
-// mongoose.connect('mongodb+srv://booking:f8eGoqoaAWN3vl76@cluster0.0dq8d.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
-
 async function uploadToS3(path, originalFilename, mimetype) {
   const client = new S3Client({
     region: 'us-east-1',
